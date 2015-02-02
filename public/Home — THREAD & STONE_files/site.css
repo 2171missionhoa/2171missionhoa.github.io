@@ -19232,7 +19232,7 @@ nav ul,nav ol {
 }
 
 #mobileNav {
-    height: 0;
+  display: none;
     overflow: hidden
 }
 
@@ -20762,7 +20762,7 @@ img[data-src]:not([src]) {
         letter-spacing: 3px;
         font-weight: normal;
         font-style: normal;
-        padding: 0 0 15px;
+        padding: 15px 0 15px;
         background-color: #fff;
         text-align: center;
         border-bottom-style: solid;
@@ -20784,7 +20784,7 @@ img[data-src]:not([src]) {
 
     #mobileNav {
         background: #fff;
-        margin: 0 0 15px
+        margin: 0;
     }
 
     #mobileNav .wrapper {
