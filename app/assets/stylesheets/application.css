@@ -1,15 +1,4 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
  *= require_tree .
  *= require_self
  */
@@ -259,7 +248,7 @@ table {
 td {
     vertical-align: top
 }
-/*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
+
 .clear {
     zoom: 1
 }
@@ -304,47 +293,6 @@ td {
     margin-left: -150px !important;
     width: 300px !important;
     height: 300px !important
-}
-
-.squarespace-signup-text {
-    font-family: 'proxima-nova','Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #fff;
-    width: 300px;
-    text-align: center;
-    padding-top: 15px;
-    line-height: 21px;
-    font-size: 15px;
-    padding-bottom: 100px
-}
-
-.squarespace-signup-text .join-thank-you {
-    font-weight: bold;
-    padding-bottom: 20px
-}
-
-.squarespace-signup-spinner {
-    background: transparent url('//static.squarespace.com/universal/images-v6/big-gear.png') center center no-repeat;
-    width: 300px !important;
-    height: 220px !important;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: spin-frames;
-    -moz-animation-name: spin-frames;
-    -o-animation-name: spin-frames;
-    animation-name: spin-frames
-}
-
-.squarespace-signup-spinner.stopped {
-    -webkit-animation-name: stopped;
-    -moz-animation-name: stopped;
-    -o-animation-name: stopped;
-    animation-name: stopped
 }
 
 .sqs-g {
@@ -595,178 +543,6 @@ td {
     outline: #afafaf dotted thin
 }
 
-html.squarespace-damask .sqs-system-error {
-    color: #3e3e3e !important;
-    background: transparent url('//static.squarespace.com/universal/images-v6/damask/error-dark.png') center center no-repeat;
-    background-position: 12px 12px
-}
-
-@media (-webkit-min-device-pixel-ratio:2),(min-resolution:1.5dppx) {
-    html.squarespace-damask .sqs-system-error {
-        background-image: url('//static.squarespace.com/universal/images-v6/damask/error-dark@2x.png');
-        background-size: 44px
-    }
-}
-
-html.squarespace-damask .sqs-system-error input {
-    cursor: pointer;
-    outline: none;
-    background: #3e3e3e;
-    padding: 11px;
-    text-align: center;
-    -webkit-transition: background-color .1s ease-in-out;
-    transition: background-color .1s ease-in-out;
-    line-height: 22px
-}
-
-html.squarespace-damask .sqs-system-error input,html.squarespace-damask .sqs-system-error input>* {
-    color: #fff !important;
-    -webkit-appearance: none;
-    border: 0;
-    text-transform: uppercase;
-    outline: none;
-    font-size: 11px;
-    font-weight: 500
-}
-
-html.squarespace-damask .sqs-system-error input:hover {
-    background-color: #000;
-    box-shadow: none
-}
-
-html.squarespace-damask .sqs-system-error-overlay.dialog-screen-overlay {
-    background: rgba(242,242,242,.98)
-}
-
-.password-prompt-overlay {
-    z-index: 50499;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    -webkit-transition: all .2s cubic-bezier(.645,.045,.355,1);
-    transition: all .2s cubic-bezier(.645,.045,.355,1);
-    background: #000;
-    background: -webkit-gradient(radial,50% 25%,0,50% 25%,800,from(rgba(0,0,0,.85)),to(#000)) transparent;
-    background: -moz-radial-gradient(center 45deg,circle cover,rgba(0,0,0,.85) 0%,#000 100%) transparent
-}
-
-.sqs-password-prompt {
-    background: #f2f2f2;
-    box-shadow: 0 4px 33px rgba(0,0,0,.22),0 0 0 1px rgba(0,0,0,.04);
-    position: absolute;
-    left: 50%;
-    top: 100px;
-    margin-left: -160px;
-    z-index: 50500;
-    -webkit-transition: all .2s cubic-bezier(.645,.045,.355,1);
-    transition: all .2s cubic-bezier(.645,.045,.355,1);
-    height: 190px;
-    width: 320px;
-    opacity: 0;
-    -webkit-transform: scale(.98);
-    -moz-transform: scale(.98);
-    -ms-transform: scale(.98);
-    transform: scale(.98)
-}
-
-.sqs-password-prompt.shown {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1)
-}
-
-.sqs-password-prompt-content .title {
-    text-transform: uppercase;
-    font-weight: 500;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border-bottom: 1px solid #e2e2e2
-}
-
-.sqs-password-prompt-content .password {
-    box-sizing: border-box;
-    position: relative;
-    background-color: #fff;
-    padding: 11px;
-    line-height: 22px;
-    height: 44px;
-    width: 100%;
-    color: #3e3e3e;
-    border: none
-}
-
-.sqs-password-prompt-content .password:focus {
-    outline: none
-}
-
-.sqs-password-prompt-content .title,.sqs-password-prompt-content .fields {
-    padding: 16.5px 33px
-}
-
-.sqs-password-prompt-content .buttons {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid #d0d0d0;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex
-}
-
-.sqs-password-prompt-content .buttons>* {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    border-left: 1px solid #d0d0d0 !important
-}
-
-.sqs-password-prompt-content .buttons>*:first-child {
-    border-left: none !important
-}
-
-.sqs-password-prompt-content .buttons input,.sqs-password-prompt-content .buttons button {
-    background: transparent
-}
-
-.sqs-password-prompt-content .buttons a {
-    border-bottom: none
-}
-
-.sqs-password-prompt-content .buttons>* {
-    cursor: pointer;
-    outline: none;
-    background: #f2f2f2;
-    padding: 11px;
-    text-align: center;
-    -webkit-transition: background-color .1s ease-in-out;
-    transition: background-color .1s ease-in-out;
-    line-height: 22px
-}
-
-.sqs-password-prompt-content .buttons>*,.sqs-password-prompt-content .buttons>*>* {
-    color: #3e3e3e !important;
-    -webkit-appearance: none;
-    border: 0;
-    text-transform: uppercase;
-    outline: none;
-    font-size: 11px;
-    font-weight: 500
-}
-
-.sqs-password-prompt-content .buttons>*:hover {
-    background-color: #fff;
-    box-shadow: none
-}
 
 body.native-currency-code-usd .sqs-money-native:before {
     content: '$'
