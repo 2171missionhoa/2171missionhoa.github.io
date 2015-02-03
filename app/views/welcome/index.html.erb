@@ -1,7 +1,8 @@
 <div id="canvas">
   <div id="mobileNav">
     <div class="wrapper">
-      <nav class="main-nav mobileNav"><ul>
+      <nav class="main-nav mobileNav">
+        <ul>
           <li class="active-link">
             <%= link_to 'Home', root_path %>
           </li>
@@ -21,74 +22,83 @@
       </nav>
     </div>
   </div>
-  <div id="mobileMenuLink"><a>Menu</a></div>
+  <div id="mobileMenuLink">
+    <a>Menu</a>
+  </div>
   <header id="header" class="clear">
     <div id="upper-logo">
-      <h1 class="logo" data-content-field="site-title">
+      <h1 class="logo">
         <%= link_to image_tag("logo.jpg"), root_path %>
       </h1>
     </div>
-
-<div id="topNav">
-  <nav class="main-nav" data-content-field="navigation">
-    <ul>
-      <li class="active-link">
-        <a href="http://www.google.com">Home</a>
-      </li>
-      <li>
-        <a href="http://www.google.com">Neighborhood</a>
-      </li>
-      <li>
-        <a href="http://www.google.com">Units</a>
-      </li>
-      <li>
-        <a href="http://www.google.com">HOA</a>
-      </li>
-      <li>
-        <a href="http://www.google.com">Contact</a>
-      </li>
-    </ul>
-    <div class="page-divider"></div>
-  </nav>
-</div>
-    </header>
-    <div class="page-divider top-divider"></div>
-    <!-- // page image or divider -->
-    <section id="page" role="main" data-content-field="main-content" style="opacity: 1;">
-      <!-- // CATEGORY NAV -->
-      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1417222278898" id="page-51d327bde4b0fc82c7b777f5"><div class="row sqs-row" id="yui_3_17_2_1_1422850119067_305"><div class="col sqs-col-12 span-12" id="yui_3_17_2_1_1422850119067_304"><div class="sqs-block gallery-block sqs-block-gallery" data-block-json="{&quot;methodOption&quot;:&quot;transient&quot;,&quot;existingGallery&quot;:null,&quot;design&quot;:&quot;slideshow&quot;,&quot;aspectRatio&quot;:null,&quot;autoplay&quot;:true,&quot;autoplay-duration&quot;:4,&quot;controls&quot;:false,&quot;auto-crop&quot;:false,&quot;square-thumbs&quot;:false,&quot;thumbnails&quot;:false,&quot;thumbnail-strip-height&quot;:80,&quot;thumbnail-strip-margin&quot;:20,&quot;show-meta&quot;:false,&quot;meta-position&quot;:&quot;bottom&quot;,&quot;show-meta-on-hover&quot;:false,&quot;active-alignment&quot;:&quot;center&quot;,&quot;thumbnails-per-row&quot;:4,&quot;padding&quot;:20,&quot;lightbox&quot;:false,&quot;max-width&quot;:300,&quot;collectionId&quot;:&quot;51d47076e4b0235e12f34695&quot;,&quot;vSize&quot;:null,&quot;transientGalleryId&quot;:&quot;51d47076e4b0235e12f34695&quot;}" data-block-type="8" id="block-d3bad4330ce5b6b7df85"><div class="sqs-block-content" id="yui_3_17_2_1_1422850119067_179"><div class="
-                  sqs-gallery-container
-                  sqs-gallery-block-slideshow
-                  clear
-                  " id="yui_3_17_2_1_1422850119067_178">
-              <%= image_tag 'building-front.jpg', id: 'welcome-image' %>
-                      <div class="color-overlay"></div>
+    <div id="topNav">
+      <nav class="main-nav">
+        <ul>
+          <li class="active-link">
+            <a href="http://www.google.com">Home</a>
+          </li>
+          <li>
+            <a href="http://www.google.com">Neighborhood</a>
+          </li>
+          <li>
+            <a href="http://www.google.com">Units</a>
+          </li>
+          <li>
+            <a href="http://www.google.com">HOA</a>
+          </li>
+          <li>
+            <a href="http://www.google.com">Contact</a>
+          </li>
+        </ul>
+        <div class="page-divider"></div>
+      </nav>
+    </div>
+  </header>
+  <div class="page-divider top-divider"></div>
+  <section id="page" role="main">
+    <div class="sqs-layout sqs-grid-12 columns-12">
+      <div class="row sqs-row">
+        <div class="col sqs-col-12 span-12">
+          <div class="sqs-block gallery-block sqs-block-gallery">
+            <div class="sqs-block-content">
+              <div class="sqs-gallery-container sqs-gallery-block-slideshow clear">
+                <%= image_tag 'building-front.jpg', id: 'welcome-image' %>
+                <div class="color-overlay">
                 </div>
-            </div></div></div></div><div class="row sqs-row" id="yui_3_17_2_1_1422850119067_188">
-      <div class="col sqs-col-4">
-        <div class="sqs-block">
-          <a href="http://www.google.com">
-            <%= image_tag 'image1.jpg', id: 'welcome-image' %>
-          </a>
+              </div>
+            </div>
         </div>
       </div>
-      <div class="col sqs-col-4">
-        <div class="sqs-block">
-          <a href="http://www.google.com">
-            <%= image_tag 'image2.jpg', id: 'welcome-image' %>
-          </a>
-        </div>
       </div>
-      <div class="col sqs-col-4">
-        <div class="sqs-block">
-          <a href="http://www.google.com">
-            <%= image_tag 'image3.jpg', id: 'welcome-image' %>
-          </a>
-        </div>
-      </div>
+      <div class="row sqs-row">
+        <div class="col sqs-col-4">
+          <div class="sqs-block">
+            <a href="http://www.google.com">
+              <%= image_tag 'image1.jpg', id: 'welcome-image' %>
+            </a>
           </div>
         </div>
-    </section>
-    <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Home Footer Content" data-type="block-field" data-updated-on="1416368286720" id="collection-51d327bde4b0fc82c7b777f5"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+        <div class="col sqs-col-4">
+          <div class="sqs-block">
+            <a href="http://www.google.com">
+              <%= image_tag 'image2.jpg', id: 'welcome-image' %>
+            </a>
+          </div>
+        </div>
+        <div class="col sqs-col-4">
+          <div class="sqs-block">
+            <a href="http://www.google.com">
+              <%= image_tag 'image3.jpg', id: 'welcome-image' %>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="sqs-layout sqs-grid-12 columns-12 empty">
+    <div class="row sqs-row">
+      <div class="col sqs-col-12 span-12">
+      </div>
+    </div>
   </div>
-  <div></div>
+</div>
