@@ -19252,8 +19252,8 @@ nav ul,nav ol {
 }
 
 @media only screen and (min-width:641px) {
-    #mobileNav.menu-open {
-        height: 0 !important
+    #mobileNav {
+        display: none !important
     }
 }
 
